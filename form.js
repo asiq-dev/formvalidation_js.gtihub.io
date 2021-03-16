@@ -1,51 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Form Validation</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-	<style type="text/css">
-	</style>
-</head>
-<body>
-	<div class="container-fluid">
-		<div class="col-md-4 col-md-offset-4">
-		<h2>Login Form</h2>
-			<form class="form-group" action="action.html" method="get" onsubmit="return validate ()">
-				<label for="name">Name:</label>
-				<span class="" id="e_name"style="color: red"></span>
-				<input class="form-control" type="text" name="name" id="name">
-				<label for="phone">Phone:</label>
-				<span class="" id="e_phone"style="color: red"></span>
-				<input class="form-control" type="text" name="phone" id="phone">
-				<label for="email">Email:</label>
-				<span class="" id="e_email"style="color: red"></span>
-				<input class="form-control" type="email" name="email" id="email"><br>
-				<label for="radio">Gender:</label>
-				<input class="" type="radio" name="radio" value="male" checked="checked">Male
-				<input class="" type="radio" name="radio" value="female">Female <br>
-				<label for="checkbox">Exam Title:</label>
-				<input class="" type="checkbox" name="checkbox" value="checkbox">HTML
-				<input class="" type="checkbox" name="checkbox" value="checkbox">CSS
-				<input class="" type="checkbox" name="checkbox" value="checkbox" checked="checked">JavaScript<br>
-				<label for="textarea">Messege:</label>
-				<span class="" id="e_textarea"style="color: red"></span>
-				<textarea name="textarea" class="form-control" id="textarea"></textarea>
-				<label for="password">Password:</label>
-				<span class="" id="e_password"style="color: red"></span>
-				<input class="form-control" type="password" name="password" id="password" onkeyup="chk_pass(this.value)">
-				<label for="password">Re-Password:</label>
-				<span class="" id="e_r_password"style="color: red"></span>
-				<input class="form-control" type="password" name="password" id="r_password"><br>
-				<input class="form-control btn btn-success" type="submit" value="Submit">
-			</form>
-		</div>
-	</div>
-
-</body>
 <script type="text/javascript">
 	function validate () {
 		var name=document.getElementById('name').value.trim();
@@ -145,5 +97,3 @@ function chk_pass(m){
 	}
 }
 </script>
-
-</html>
